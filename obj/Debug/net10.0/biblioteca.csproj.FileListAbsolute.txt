@@ -26,3 +26,4 @@ C:\Users\anast\OneDrive\Documentos\biblioteca\obj\Debug\net10.0\refint\bibliotec
 C:\Users\anast\OneDrive\Documentos\biblioteca\obj\Debug\net10.0\biblioteca.pdb
 C:\Users\anast\OneDrive\Documentos\biblioteca\obj\Debug\net10.0\biblioteca.genruntimeconfig.cache
 C:\Users\anast\OneDrive\Documentos\biblioteca\obj\Debug\net10.0\ref\biblioteca.dll
+C:\Users\anast\OneDrive\Documentos\biblioteca\obj\Debug\net10.0\biblioteca.sourcelink.json

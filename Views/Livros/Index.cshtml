@@ -1,17 +1,13 @@
-
 @model List<biblioteca.Models.Livro>
-
 @{
     ViewData["Title"] = "Catálogo de livros";
 }
 
 <h1>Catálogo de livros</h1>
 
-<p>Consulta os livros existentes na biblioteca escolar.</p>
-
-<table class="table table-bordered table-striped">
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
     <thead>
-        <tr>
+        <tr style="background-color: #f2f2f2;">
             <th>ID</th>
             <th>Título</th>
             <th>Autor</th>
@@ -42,5 +38,6 @@
     </tbody>
 </table>
 
-<a asp-controller="Home" asp-action="Index">Voltar à página inicial
-</a>
+<p style="margin-top: 20px;">
+    <a href="/">Voltar à página inicial</a>
+</p>
