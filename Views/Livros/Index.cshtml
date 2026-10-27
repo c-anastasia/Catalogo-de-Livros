@@ -1,0 +1,46 @@
+
+@model List<biblioteca.Models.Livro>
+
+@{
+    ViewData["Title"] = "Catálogo de livros";
+}
+
+<h1>Catálogo de livros</h1>
+
+<p>Consulta os livros existentes na biblioteca escolar.</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Ano de publicação</th>
+            <th>Disponibilidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var livro in Model)
+        {
+            <tr>
+                <td>@livro.Id</td>
+                <td>@livro.Titulo</td>
+                <td>@livro.Autor</td>
+                <td>@livro.AnoPublicacao</td>
+                <td>
+                    @if (livro.Disponivel)
+                    {
+                        <span>Disponível</span>
+                    }
+                    else
+                    {
+                        <span>Indisponível</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="Home" asp-action="Index">Voltar à página inicial
+</a>
